@@ -1,6 +1,6 @@
 import React from 'react';
 
-class NotFound extends React.Component
+class ClassName extends React.Component
 {
     render(){
         const returnVal = <div></div>;
@@ -10,4 +10,4 @@ class NotFound extends React.Component
     }
 };
 
-export default NotFound;
+export default ClassName;
