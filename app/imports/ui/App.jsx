@@ -1,13 +1,18 @@
 import React from 'react';
-import Hello from './Hello.jsx';
-import Info from './Info.jsx';
+import * as Router from 'react-router-dom';
+import Home from '../pages/Home'
+import NotFound from '../page'
 
 const App = () => (
-  <div>
-    <h1>Welcome to Meteor!</h1>
-    <Hello />
-    <Info />
-  </div>
+    <Router.BrowserRouter>
+        <Router.Route path='/' Component={Home}>
+            <Router.Route path='*' Component={NotFound}/>
+
+        </Router.Route>
+        <Router.Route path='*' Component={NotFound}/>
+
+
+    </Router.BrowserRouter>
 );
 
 export default App;
