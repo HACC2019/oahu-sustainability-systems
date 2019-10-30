@@ -5,10 +5,10 @@ class Home extends React.Component
 {
     render(){
         const returnVal = <div>
-            <Navbar>
-                
-            </Navbar>
+            <Header/>
+            <Navbar/>
 
+            <Footer/>
         </div>;
         return(
             returnVal

@@ -7,10 +7,8 @@ class Navbar extends React.Component
 {
     render(){
         const returnVal = <Menu>
-            <MenuItem/>
-            <MenuItem/>
-            <MenuItem/>
-            <MenuItem/>
+            <MenuItem>Home </MenuItem>
+            <MenuItem>About </MenuItem>
         </Menu>;
         return(
             returnVal
