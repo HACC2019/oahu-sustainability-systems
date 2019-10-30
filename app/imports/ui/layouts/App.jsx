@@ -6,7 +6,8 @@ import NotFound from '../page'
 const App = () => (
     <Router.BrowserRouter>
         <Router.Route path='/' Component={Home}>
-            <Router.Route path='*' Component={NotFound}/>
+            <Router.Route path='About' Component={Dashboard}/>
+            <Router.Route path='About' Component={About}/>
 
         </Router.Route>
         <Router.Route path='*' Component={NotFound}/>
