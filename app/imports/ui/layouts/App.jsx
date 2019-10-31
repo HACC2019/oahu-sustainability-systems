@@ -1,19 +1,16 @@
 import React from 'react';
 import * as Router from 'react-router-dom';
 import Home from '../pages/Home'
-import NotFound from '../page'
+import NotFound from '../pages/NotFound'
+import About from '../pages/About'
 
 const App = () => (
-    <Router.BrowserRouter>
-        <Router.Route path='/' Component={Home}>
-            <Router.Route path='About' Component={Dashboard}/>
-            <Router.Route path='About' Component={About}/>
-
-        </Router.Route>
-        <Router.Route path='*' Component={NotFound}/>
+        <Router.BrowserRouter>
+            <Router.Route path='/' component={Home}/>
+        </Router.BrowserRouter>
 
 
-    </Router.BrowserRouter>
+
 );
 
 export default App;

@@ -1,19 +1,15 @@
 import React from 'react';
-import Menu from 'semantic-ui-react';
-import MenuItem from "semantic-ui-react";
-
-
+import { Menu , MenuItem } from 'semantic-ui-react';
 class Navbar extends React.Component
 {
     render(){
-        const returnVal = <Menu>
-            <MenuItem>Home </MenuItem>
-            <MenuItem>About </MenuItem>
-        </Menu>;
         return(
-            returnVal
+        <Menu>
+            <MenuItem link="Home">Home </MenuItem>
+            <MenuItem link="About">About </MenuItem>
+        </Menu>
         );
     }
-};
+}
 
 export default Navbar;

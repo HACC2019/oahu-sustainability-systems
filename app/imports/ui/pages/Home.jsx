@@ -1,19 +1,19 @@
 import React from 'react';
 import Navbar from "../components/Navbar";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 class Home extends React.Component
 {
     render(){
-        const returnVal = <div>
-            <Header/>
-            <Navbar/>
-
-            <Footer/>
-        </div>;
         return(
-            returnVal
+            <div>
+                <Header/>
+                <Navbar/>
+                <Footer/>
+            </div>
         );
     }
-};
+}
 
 export default Home;
