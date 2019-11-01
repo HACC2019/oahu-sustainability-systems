@@ -6,7 +6,11 @@ import About from '../pages/About'
 
 const App = () => (
         <Router.BrowserRouter>
+            <Router.Switch>
             <Router.Route path='/' component={Home}/>
+            <Router.Route path='/About' component={About}/>
+            </Router.Switch>
+
         </Router.BrowserRouter>
 
 

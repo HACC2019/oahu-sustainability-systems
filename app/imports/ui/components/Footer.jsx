@@ -1,12 +1,15 @@
 import React from 'react';
+import { Grid } from 'semantic-ui-react';
 
 class Footer extends React.Component
 {
     render(){
         return(
-          <footer>
-
-          </footer>
+            <footer>
+          <Grid centered>
+            footer
+          </Grid>
+            </footer>
         );
     }
 }

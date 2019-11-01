@@ -2,3 +2,17 @@ body {
   padding: 10px;
   font-family: sans-serif;
 }
+/* Color Theme Swatches in Hex */
+.menu { background-color: #344021; }
+.bgTwo { background-color: #93A603; }
+.bgThree { background-color: #888C16; }
+#Main
+{
+  min-height : 500px;
+}
+footer
+{
+  background-color : #000;
+  color : #fff;
+}
+
