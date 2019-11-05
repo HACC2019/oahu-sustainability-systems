@@ -1,24 +1,27 @@
 import React from 'react';
 import { Grid , Container , Card } from 'semantic-ui-react';
 import Toolbar from '../components/Toolbar';
+import { DragDropContext , Draggable , Droppable} from 'react-beautiful-dnd';
 class Main extends React.Component
 {
     render(){
         return(
-
+	<DragDropContext>
             <Grid id="Main" divided>
                 <Grid.Column width={12}>
                     <Toolbar/>
-                    test
+			<Droppable>
+			</Droppable>
                 </Grid.Column>
                 <Grid.Column width={4}>
                     <Card.Group>
-                        <Card fluid header='Option 1' />
-                        <Card fluid header='Option 2' />
-                        <Card fluid header='Option 3' />
+			<Draggable>
+                        	<Card fluid header='Option 1' />
+			</Draggable>
                     </Card.Group>
                 </Grid.Column>
             </Grid>
+	</DragDropContext>
 
         );
     }
